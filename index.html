@@ -1,0 +1,1022 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Amitesh KD | Digital Marketing Specialist</title>
+
+    <meta name="description" content="Amitesh KD is a Digital Marketing Specialist offering Facebook Ads, TikTok Ads, Instagram Marketing, Social Media Management and Virtual IT Assistant services.">
+
+    <style>
+
+        /* =========================
+           GLOBAL
+        ========================== */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+            background: #f8fafc;
+            color: #111827;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1150px;
+            margin: auto;
+        }
+
+
+        /* =========================
+           HEADER
+        ========================== */
+
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: rgba(255,255,255,0.96);
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        .navbar {
+            height: 75px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            font-size: 25px;
+            font-weight: 800;
+            color: #111827;
+        }
+
+        .logo span {
+            color: #2563eb;
+        }
+
+        nav {
+            display: flex;
+            gap: 28px;
+        }
+
+        nav a {
+            color: #374151;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #2563eb;
+        }
+
+
+        /* =========================
+           HERO
+        ========================== */
+
+        .hero {
+            min-height: 90vh;
+            display: flex;
+            align-items: center;
+            background:
+                linear-gradient(135deg, #eff6ff, #ffffff);
+        }
+
+        .hero-content {
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .badge {
+            display: inline-block;
+            background: #dbeafe;
+            color: #1d4ed8;
+            padding: 8px 16px;
+            border-radius: 30px;
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 {
+            font-size: 58px;
+            line-height: 1.1;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 span {
+            color: #2563eb;
+        }
+
+        .hero p {
+            font-size: 19px;
+            color: #64748b;
+            max-width: 650px;
+            margin-bottom: 30px;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 14px 25px;
+            border-radius: 8px;
+            font-weight: bold;
+            display: inline-block;
+            transition: 0.3s;
+        }
+
+        .btn-primary {
+            background: #2563eb;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #1d4ed8;
+            transform: translateY(-2px);
+        }
+
+        .btn-outline {
+            border: 2px solid #2563eb;
+            color: #2563eb;
+        }
+
+        .btn-outline:hover {
+            background: #2563eb;
+            color: white;
+        }
+
+
+        /* HERO CARD */
+
+        .hero-card {
+            background: white;
+            padding: 35px;
+            border-radius: 20px;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.08);
+            text-align: center;
+        }
+
+        .profile-icon {
+            width: 120px;
+            height: 120px;
+            background: #dbeafe;
+            border-radius: 50%;
+            margin: auto auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 50px;
+        }
+
+        .hero-card h3 {
+            font-size: 24px;
+            margin-bottom: 8px;
+        }
+
+        .hero-card p {
+            font-size: 15px;
+            margin: 0;
+        }
+
+
+        /* =========================
+           SECTIONS
+        ========================== */
+
+        section {
+            padding: 90px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-title h2 {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        .section-title p {
+            color: #64748b;
+            max-width: 650px;
+            margin: auto;
+        }
+
+
+        /* =========================
+           SERVICES
+        ========================== */
+
+        .services {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .service-card {
+            background: white;
+            padding: 32px;
+            border-radius: 15px;
+            border: 1px solid #e5e7eb;
+            transition: 0.3s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-7px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+        }
+
+        .service-icon {
+            font-size: 40px;
+            margin-bottom: 18px;
+        }
+
+        .service-card h3 {
+            font-size: 22px;
+            margin-bottom: 12px;
+        }
+
+        .service-card p {
+            color: #64748b;
+        }
+
+
+        /* =========================
+           ABOUT
+        ========================== */
+
+        .about {
+            background: white;
+        }
+
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .about h2 {
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+
+        .about p {
+            color: #64748b;
+            margin-bottom: 18px;
+        }
+
+        .skills {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+
+        .skill {
+            background: #f8fafc;
+            padding: 18px;
+            border-radius: 10px;
+            font-weight: bold;
+            border: 1px solid #e5e7eb;
+        }
+
+
+        /* =========================
+           WHY ME
+        ========================== */
+
+        .why-me {
+            background: #eff6ff;
+        }
+
+        .why-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .why-card {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+        }
+
+        .why-card h3 {
+            margin: 15px 0 10px;
+        }
+
+        .why-card p {
+            color: #64748b;
+        }
+
+        .why-icon {
+            font-size: 40px;
+        }
+
+
+        /* =========================
+           CTA
+        ========================== */
+
+        .cta {
+            background: #111827;
+            color: white;
+            text-align: center;
+        }
+
+        .cta h2 {
+            font-size: 42px;
+            margin-bottom: 15px;
+        }
+
+        .cta p {
+            color: #cbd5e1;
+            max-width: 650px;
+            margin: 0 auto 30px;
+        }
+
+
+        /* =========================
+           CONTACT
+        ========================== */
+
+        .contact {
+            background: white;
+        }
+
+        .contact-box {
+            max-width: 750px;
+            margin: auto;
+            text-align: center;
+        }
+
+        .contact-box h2 {
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+
+        .contact-box p {
+            color: #64748b;
+            margin-bottom: 25px;
+        }
+
+        .contact-links {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .contact-link {
+            padding: 14px 20px;
+            background: #f1f5f9;
+            color: #111827;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+
+        /* =========================
+           FOOTER
+        ========================== */
+
+        footer {
+            background: #0f172a;
+            color: #cbd5e1;
+            text-align: center;
+            padding: 25px;
+        }
+
+        footer strong {
+            color: white;
+        }
+
+
+        /* =========================
+           MOBILE
+        ========================== */
+
+        @media (max-width: 850px) {
+
+            .hero-content,
+            .about-content {
+                grid-template-columns: 1fr;
+            }
+
+            .hero {
+                padding: 70px 0;
+            }
+
+            .hero h1 {
+                font-size: 43px;
+            }
+
+            .services,
+            .why-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            nav {
+                gap: 12px;
+            }
+
+            nav a {
+                font-size: 14px;
+            }
+        }
+
+
+        @media (max-width: 600px) {
+
+            .navbar {
+                height: auto;
+                padding: 18px 0;
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .hero h1 {
+                font-size: 38px;
+            }
+
+            .hero p {
+                font-size: 17px;
+            }
+
+            .services,
+            .why-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .skills {
+                grid-template-columns: 1fr;
+            }
+
+            .section-title h2,
+            .about h2,
+            .contact-box h2 {
+                font-size: 32px;
+            }
+
+            .cta h2 {
+                font-size: 32px;
+            }
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+
+<!-- =========================
+     HEADER
+========================== -->
+
+<header>
+
+    <div class="container navbar">
+
+        <a href="#home" class="logo">
+            Amitesh<span>KD</span>
+        </a>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#services">Services</a>
+            <a href="#about">About</a>
+            <a href="#why">Why Me</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+    </div>
+
+</header>
+
+
+
+<!-- =========================
+     HERO
+========================== -->
+
+<section class="hero" id="home">
+
+    <div class="container hero-content">
+
+        <div>
+
+            <span class="badge">
+                🚀 Digital Marketing Specialist
+            </span>
+
+            <h1>
+                I Help Businesses
+                <span>Grow Online.</span>
+            </h1>
+
+            <p>
+                I'm Amitesh, a Digital Marketing Specialist
+                helping businesses grow through Facebook Ads,
+                TikTok Ads, Instagram Marketing, Social Media
+                Management and Virtual IT Assistance.
+            </p>
+
+            <div class="buttons">
+
+                <a href="#contact" class="btn btn-primary">
+                    Let's Work Together
+                </a>
+
+                <a href="#services" class="btn btn-outline">
+                    View My Services
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="hero-card">
+
+            <div class="profile-icon">
+                👨‍💻
+            </div>
+
+            <h3>
+                Amitesh KD
+            </h3>
+
+            <p>
+                Digital Marketing Specialist
+            </p>
+
+            <p>
+                Facebook Ads • TikTok Ads • Instagram
+                • Social Media • Virtual IT Assistant
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     SERVICES
+========================== -->
+
+<section id="services">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h2>
+                My Services
+            </h2>
+
+            <p>
+                Professional digital solutions designed to
+                help businesses build their online presence,
+                reach the right audience and generate results.
+            </p>
+
+        </div>
+
+
+        <div class="services">
+
+
+            <div class="service-card">
+
+                <div class="service-icon">
+                    📈
+                </div>
+
+                <h3>
+                    Digital Marketing
+                </h3>
+
+                <p>
+                    Complete digital marketing strategies
+                    designed to increase online visibility,
+                    reach potential customers and grow your
+                    business.
+                </p>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <div class="service-icon">
+                    📘
+                </div>
+
+                <h3>
+                    Facebook Ads
+                </h3>
+
+                <p>
+                    Targeted Facebook advertising campaigns
+                    focused on reaching the right audience,
+                    generating leads and increasing conversions.
+                </p>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <div class="service-icon">
+                    🎵
+                </div>
+
+                <h3>
+                    TikTok Ads
+                </h3>
+
+                <p>
+                    TikTok advertising campaigns designed to
+                    increase brand awareness, engagement and
+                    reach new audiences.
+                </p>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <div class="service-icon">
+                    📱
+                </div>
+
+                <h3>
+                    Social Media Management
+                </h3>
+
+                <p>
+                    Professional social media management
+                    including content planning, posting,
+                    engagement and account growth.
+                </p>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <div class="service-icon">
+                    📸
+                </div>
+
+                <h3>
+                    Instagram Marketing
+                </h3>
+
+                <p>
+                    Instagram growth strategies including
+                    content management, audience engagement
+                    and profile optimization.
+                </p>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <div class="service-icon">
+                    💻
+                </div>
+
+                <h3>
+                    Virtual IT Assistant
+                </h3>
+
+                <p>
+                    Reliable virtual assistance for online
+                    business tasks, digital operations,
+                    research, data management and technical
+                    support.
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     ABOUT
+========================== -->
+
+<section class="about" id="about">
+
+    <div class="container about-content">
+
+
+        <div>
+
+            <h2>
+                About Me
+            </h2>
+
+            <p>
+                Hello! I'm Amitesh KD, a Digital Marketing
+                Specialist focused on helping businesses
+                establish and grow their online presence.
+            </p>
+
+            <p>
+                My services cover digital marketing,
+                paid advertising, social media management,
+                Instagram marketing and virtual assistance.
+            </p>
+
+            <p>
+                I focus on understanding business goals,
+                reaching the right audience and providing
+                practical digital solutions.
+            </p>
+
+            <a href="#contact" class="btn btn-primary">
+                Start a Project
+            </a>
+
+        </div>
+
+
+        <div class="skills">
+
+            <div class="skill">
+                ✓ Digital Marketing
+            </div>
+
+            <div class="skill">
+                ✓ Facebook Ads
+            </div>
+
+            <div class="skill">
+                ✓ TikTok Ads
+            </div>
+
+            <div class="skill">
+                ✓ Instagram Marketing
+            </div>
+
+            <div class="skill">
+                ✓ Social Media Management
+            </div>
+
+            <div class="skill">
+                ✓ Virtual IT Assistance
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     WHY WORK WITH ME
+========================== -->
+
+<section class="why-me" id="why">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h2>
+                Why Work With Me?
+            </h2>
+
+            <p>
+                I provide professional and reliable digital
+                services with a focus on business goals.
+            </p>
+
+        </div>
+
+
+        <div class="why-grid">
+
+
+            <div class="why-card">
+
+                <div class="why-icon">
+                    🎯
+                </div>
+
+                <h3>
+                    Targeted Approach
+                </h3>
+
+                <p>
+                    I focus on reaching the right audience
+                    for your business and marketing goals.
+                </p>
+
+            </div>
+
+
+            <div class="why-card">
+
+                <div class="why-icon">
+                    💡
+                </div>
+
+                <h3>
+                    Creative Strategy
+                </h3>
+
+                <p>
+                    I use practical digital strategies to
+                    improve online visibility and engagement.
+                </p>
+
+            </div>
+
+
+            <div class="why-card">
+
+                <div class="why-icon">
+                    🤝
+                </div>
+
+                <h3>
+                    Reliable Support
+                </h3>
+
+                <p>
+                    Clear communication and dependable
+                    support throughout the project.
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     CTA
+========================== -->
+
+<section class="cta">
+
+    <div class="container">
+
+        <h2>
+            Ready to Grow Your Business?
+        </h2>
+
+        <p>
+            Let's discuss your project and find the right
+            digital marketing solution for your business.
+        </p>
+
+        <a href="#contact" class="btn btn-primary">
+            Get Started
+        </a>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     CONTACT
+========================== -->
+
+<section class="contact" id="contact">
+
+    <div class="container contact-box">
+
+        <h2>
+            Let's Work Together
+        </h2>
+
+        <p>
+            Have a project or business idea?
+            Get in touch with me and let's discuss
+            how I can help.
+        </p>
+
+
+        <div class="contact-links">
+
+            <!-- CHANGE YOUR EMAIL HERE -->
+
+            <a
+                href="mailto:your@email.com"
+                class="contact-link">
+
+                📧 Email Me
+
+            </a>
+
+
+            <!-- CHANGE YOUR WHATSAPP NUMBER HERE -->
+
+            <a
+                href="https://wa.me/8801XXXXXXXXX"
+                class="contact-link"
+                target="_blank">
+
+                💬 WhatsApp
+
+            </a>
+
+
+            <!-- CHANGE YOUR FACEBOOK LINK HERE -->
+
+            <a
+                href="https://facebook.com/"
+                class="contact-link"
+                target="_blank">
+
+                📘 Facebook
+
+            </a>
+
+
+            <!-- CHANGE YOUR INSTAGRAM LINK HERE -->
+
+            <a
+                href="https://instagram.com/"
+                class="contact-link"
+                target="_blank">
+
+                📸 Instagram
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     FOOTER
+========================== -->
+
+<footer>
+
+    <p>
+        © 2026 <strong>Amitesh KD</strong>.
+        All Rights Reserved.
+    </p>
+
+</footer>
+
+
+</body>
+</html>
